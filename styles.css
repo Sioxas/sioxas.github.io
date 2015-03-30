@@ -1,0 +1,13 @@
+
+*{margin: 0px;padding:0px;}
+body {
+    background-color:#ccc;
+}
+#con ul{width:auto;height: 180px;}
+#con ul li{list-style-type: none;background: #fff;margin:10px 0px;height: 60px;line-height: 60px;text-align: center;}
+#con ul li a{text-decoration: none;display:inline-block;
+    font-family: '微软雅黑';font-size:20px;
+    height: 40px;color: #000;
+}
+#con ul li a:hover{color:#999999;}
+#cc{height: 30px;width:100%;text-align:center;position: fixed;bottom: 0px;background:#bcbcbc;border-top:1px solid #acacac;line-height: 30px;}
