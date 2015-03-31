@@ -193,11 +193,28 @@ body {
     background: #222428;
 }
 
-.swiper-slide .title {
-    
+.swiper-slide .title {}
+
+.swiper-slide .title img {
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    margin-left: -150px;
 }
-.swiper-slide .title img{width:300px;position:absolute;left:50%;top:20%;margin-left:-150px;}
-.swiper-slide .title p{position: absolute;width:300px;top:45%;left:50%;margin-left:-150px;text-align: right;font-family: zongyijt248230, sans-serif;color:#fff;font-size:30px;}
+
+.swiper-slide .title p {
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    text-align: right;
+    font-family: zongyijt248230, sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+
 .pagination {
     position: absolute;
     z-index: 20;
@@ -282,7 +299,7 @@ body {
 }
 
 .slide-1 ul li:nth-child(3) {
-    background:#f9a92c;
+    background: #f9a92c;
     display: none;
 }
 
@@ -1326,19 +1343,23 @@ body {
 }
 
 .slide6 #card1 {
-    background: #fff794;display:none;
+    background: #fff794;
+    display: none;
 }
 
 .slide6 #card2 {
-    background: #9bbb59;display:none;
+    background: #9bbb59;
+    display: none;
 }
 
 .slide6 #card3 {
-    background: #a9deff;display:none;
+    background: #a9deff;
+    display: none;
 }
 
 .slide6 #card4 {
-    background: #ffc855;display:none;
+    background: #ffc855;
+    display: none;
 }
 
 .scaleYTopani {
@@ -2477,7 +2498,7 @@ body {
 }
 
 .slide14 .con .conLeft ul li {
-    height: 107px;
+    height: 79px;
     position: relative;
     border: 3px solid #61c359;
     border-right: 10px solid #61c359;
@@ -2500,7 +2521,7 @@ body {
 .slide14 .con .conRight {
     float: left;
     width: 210px;
-    height: 339px;
+    height: 340px;
     overflow: hidden;
     z-index: 0;
 }
@@ -2733,7 +2754,7 @@ body {
     position: relative;
     top: 50%;
     margin-top: -150px;
-    width:280px;
+    width: 280px;
 }
 /*slide18 end*/
 
@@ -2795,3 +2816,117 @@ body {
     margin-top: -125px;
 }
 /*slide20 end*/
+/*slide21 start*/
+
+.slide21 {
+    position: relative;
+    background: #30aedf;
+}
+
+.slide21 h1 {
+    font-family: zongyijt248230, sans-serif;
+    margin-top: 20px;
+}
+
+.slide21 .imgp {
+    left: 50%;
+    text-align: left;
+    height: 65px;
+    position: absolute;
+    margin-left: -150px;
+}
+
+.slide21 .imgp:nth-child(2) {
+    top: 25%;
+}
+
+.slide21 .imgp:nth-child(3) {
+    top: 40%;
+}
+
+.slide21 .imgp img {
+    display: inline-block;
+    width: 50px;
+}
+
+.slide21 .imgp p {
+    line-height: 65px;
+    font-size: 25px;
+    font-family: Source-Han-Light248231, sans-serif;
+    display: inline-block;
+}
+
+.slide21 .text {
+    position: absolute;
+    top: 60%;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    font-size: 20px;
+    font-family: Source-Han-Light248231, sans-serif;
+}
+/*slide21 end*/
+/*slide22 start*/
+
+.slide22 {
+    position: relative;
+    background: #a1ffa1;
+}
+
+.slide22 h1 {
+    margin-top: 20px;
+    font-family: zongyijt248230, sans-serif;
+}
+
+.slide22 ul {
+    text-align: left;
+    list-style: none;
+    width: 290px;
+    position: absolute;
+    left: 50%;
+    margin-left: -145px;
+    top:50%;margin-top:-135px;
+}
+
+.slide22 ul li img {
+    width: 90px;
+    float: left;
+    clear: left;
+    margin-right: 10px;
+}
+
+.slide22 ul li {
+    height: 90px;
+}
+
+.slide22 ul li h3 {font-family: Source-Han-Light248231, sans-serif;}
+
+.slide22 ul li ul {
+    list-style: disc;
+    list-style-position: inside;
+    position: relative;
+    margin-left: 0px;
+    left: 0px;
+    top:0;
+    margin-top:10px;
+}
+
+.slide22 ul li ul li {
+    height: 20px;
+}
+.slide22 ul li:nth-child(3) {
+    line-height:90px;
+}
+/*slide22 end*/
+/*slide23 start*/
+.slide23 {position: relative;background:#30aedf;}
+.slide23 h1{margin:15px auto;}
+.slide23 h2{text-align: left;width:300px;margin:15px auto;}
+.slide23 h3{text-align: right;width:300px;margin:15px auto;}
+.slide23 .conImg{width:300px;height:150px;position:absolute;left:50%;margin-left:-150px;}
+.slide23 .conImg img{float:left;width:150px;height:150px;}
+.slide23 p{width:300px;position:absolute;left:50%;margin-left:-150px;top:70%;font-size: 20px;}
+/*slide23 end*/
+
+.slide24{background:#30aedf;position: relative;}
+.slide24 img{position: absolute;left:50%;margin-left:-150px;top:50%;margin-top:-150px;}
