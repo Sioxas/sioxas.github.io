@@ -194,13 +194,10 @@ body {
 }
 
 .swiper-slide .title {
-    font-style: italic;
-    font-size: 42px;
-    margin-top: 80px;
-    margin-bottom: 0;
-    line-height: 45px;
+    
 }
-
+.swiper-slide .title img{width:300px;position:absolute;left:50%;top:20%;margin-left:-150px;}
+.swiper-slide .title p{position: absolute;width:300px;top:45%;left:50%;margin-left:-150px;text-align: right;font-family: zongyijt248230, sans-serif;color:#fff;font-size:30px;}
 .pagination {
     position: absolute;
     z-index: 20;
@@ -2713,7 +2710,7 @@ body {
 /*slide18 start*/
 
 .slide18 {
-    background: #DAD4B9;
+    background: #30aedf;
     position: relative;
 }
 
@@ -2736,6 +2733,7 @@ body {
     position: relative;
     top: 50%;
     margin-top: -150px;
+    width:280px;
 }
 /*slide18 end*/
 
@@ -2772,7 +2770,8 @@ body {
 /*slide19 start*/
 
 .slide19 {
-    background: #ffffb0;
+    background: #30aedf;
+    position: relative;
 }
 
 #title2 {
@@ -2784,7 +2783,7 @@ body {
 /*slide20 start*/
 
 .slide20 {
-    background: #81d681;
+    background: #30aedf;
     position: relative;
 }
 
