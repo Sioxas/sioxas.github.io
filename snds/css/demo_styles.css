@@ -205,10 +205,10 @@ body {
 
 .swiper-slide .title p {
     position: absolute;
-    width: 300px;
+    width: 273px;
     top: 50%;
     left: 50%;
-    margin-left: -150px;
+    margin-left: -136px;
     text-align: right;
     font-family: zongyijt248230, sans-serif;
     color: #fff;
@@ -372,7 +372,7 @@ body {
     font-size: 18px;
     color: #000;
     left: 50%;
-    margin-left: -109px;
+    margin-left: -54px;
     font-family: Source-Han-Light248231, sans-serif;
 }
 /*slide0 end*/
@@ -400,7 +400,7 @@ body {
     top: 50%;
     left: 50%;
     margin-top: -200px;
-    margin-left: 80px;
+    margin-left: 100px;
     font-size: 32px;
     line-height: 34px;
     font-family: zongyijt248230;
@@ -790,6 +790,7 @@ body {
 
 .slide3 {
     background: #bde77b;
+    position: relative;
 }
 
 .slide3 h1 {
@@ -813,9 +814,12 @@ body {
 #chart3 {
     width: 250px;
     height: 150px;
-    margin: 0px auto;
-    margin-top: 50px;
+    margin-top: -75px;
+    margin-left:-125px;
     display: none;
+    top:50%;
+    left:50%;
+    position: absolute;
 }
 
 #chart3 .leftCon {
@@ -829,7 +833,7 @@ body {
 #chart3 .leftCon ul li {
     line-height: 30px;
     font-family: Source-Han-Light248231, sans-serif;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 #chart3 .leftCon ul li img {
@@ -848,7 +852,7 @@ body {
 
 #chart3 .rightCon ul li {
     height: 30px;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 #chart3 .rightCon ul li div {
@@ -2837,16 +2841,17 @@ body {
 }
 
 .slide21 .imgp:nth-child(2) {
-    top: 25%;
+    top: 50%;
+    margin-top: -190px;
 }
 
 .slide21 .imgp:nth-child(3) {
-    top: 40%;
+    top: 50%;
 }
 
 .slide21 .imgp img {
     display: inline-block;
-    width: 50px;
+    width: 300px;
 }
 
 .slide21 .imgp p {
@@ -2887,6 +2892,7 @@ body {
     margin-left: -145px;
     top: 50%;
     margin-top: -135px;
+    font-family: Source-Han-Light248231, sans-serif;
 }
 
 .slide22 ul li img {
@@ -2900,9 +2906,7 @@ body {
     height: 90px;
 }
 
-.slide22 ul li h3 {
-    font-family: Source-Han-Light248231, sans-serif;
-}
+.slide22 ul li h3 {}
 
 .slide22 ul li ul {
     list-style: disc;
@@ -2916,58 +2920,13 @@ body {
 
 .slide22 ul li ul li {
     height: 20px;
+    font-size: 16px;
 }
 
 .slide22 ul li:nth-child(3) {
     line-height: 90px;
 }
 /*slide22 end*/
-/*slide23 start*/
-
-.slide23 {
-    position: relative;
-    background: #30aedf;
-}
-
-.slide23 h1 {
-    margin: 15px auto;
-}
-
-.slide23 h2 {
-    text-align: left;
-    width: 300px;
-    margin: 15px auto;
-}
-
-.slide23 h3 {
-    text-align: right;
-    width: 300px;
-    margin: 15px auto;
-}
-
-.slide23 .conImg {
-    width: 300px;
-    height: 150px;
-    position: absolute;
-    left: 50%;
-    margin-left: -150px;
-}
-
-.slide23 .conImg img {
-    float: left;
-    width: 150px;
-    height: 150px;
-}
-
-.slide23 p {
-    width: 300px;
-    position: absolute;
-    left: 50%;
-    margin-left: -150px;
-    top: 70%;
-    font-size: 20px;
-}
-/*slide23 end*/
 
 .slide24,
 .slide26,
@@ -2977,12 +2936,20 @@ body {
     position: relative;
 }
 
+.slide24 h1,
+.slide26 h1,
+.slide27 h1,
+.slide28 h1 {
+    font-family: zongyijt248230, sans-serif;
+    margin-top: 20px;
+}
+
 .slide24 ul,
 .slide26 ul,
 .slide27 ul,
 .slide28 ul {
     list-style-position: inside;
-    width:270px;
+    width: 270px;
     height: 300px;
     position: absolute;
     left: 50%;
@@ -2992,6 +2959,25 @@ body {
     text-align: left;
     line-height: 40px;
     font-size: 18px;
+    font-family: Source-Han-Light248231, sans-serif;
+}
+
+.cons li {
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding-left: 10px;
+}
+
+.cons li:nth-child(1) {
+    background: #f79646;
+}
+
+.cons li:nth-child(2) {
+    background: #9bbb59;
+}
+
+.cons li:nth-child(3) {
+    background: #f7e946;
 }
 /*slide25 start*/
 
@@ -3021,12 +3007,11 @@ body {
     list-style: none;
 }
 
-.slide25 .con ul li {
-    margin: 10px 0;
-}
+.slide25 .con ul li {}
 
 .slide25 .con ul .outer {
     border-radius: 10px;
+    margin: 20px 0;
 }
 
 .slide25 .con ul .outer:nth-child(1) {
@@ -3043,10 +3028,11 @@ body {
 
 .slide25 .con ul li ul {
     display: none;
-    width: 200px;
+    width: 240px;
     margin: auto;
     text-align: left;
     list-style: disc;
     list-style-position: inside;
+    font-size: 16px;
 }
 /*slide25 end*/
