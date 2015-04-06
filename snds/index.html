@@ -218,7 +218,9 @@
                         <br/>发展现状</p>
                 </div>
             </div>
-
+            <div class="swiper-slide" style="background:#30aedf">
+                <img  style="position:relative;top:40%;" src="images/2.1.png"/>
+            </div>
             <!--            slide1 start-->
             <div class="swiper-slide slide1_1">
                 <div id="img1_1">有
@@ -391,6 +393,9 @@
                 </div>
             </div>
             <!--            slide4 end-->
+            <div class="swiper-slide" style="background:#30aedf">
+                <img  style="position:relative;top:45%;" src="images/2.2.png"/>
+            </div>
             <!--            slide5 start-->
             <div class="swiper-slide slide5">
                 <h1 id="s5_1">自产是主要的生产方式</h1>
@@ -516,11 +521,12 @@
 
                 <div id="chart8">
                     <img id="img8_1" height="250" src="images/snwz.png" />
-                    <canvas id="canvas8_1" width="300" height="300"></canvas>
                 </div>
             </div>
             <!--            slide8 end-->
-
+<div class="swiper-slide" style="background:#30aedf;position:relative;">
+                <img style="position:relative;top:45%;" src="images/2.3.png"/>
+            </div>
             <!--            slide9 start-->
 
             <div class="swiper-slide slide9">
@@ -650,9 +656,6 @@
             <!--            slide12 start-->
             <div class="swiper-slide slide12">
                 <h1>农民对开展涉农<br/>电子商务的看法</h1>
-                <div id="chart12">
-                    <canvas id="canvas12"></canvas>
-                </div>
                 <div class="ins">
                     <img width="290" src="images/slide12ins.png" />
                 </div>
@@ -1039,10 +1042,6 @@
 
                         function animate6() { //柱状图显示
                             $('#chart8').show();
-                            if (isPlay8_1) {
-                                isPlay8_1 = false;
-                                canvas8_1();
-                            }
                             setTimeout("$('#img8_1').show();", 600);
                         }
 
@@ -1087,12 +1086,7 @@
                             animation: 'bounceInRight',
                             duration: 1
                         }, function () {
-
-                            if (isPlay12) {
-                                isPlay12 = false;
-                                canvas12();
-                            }
-                            setTimeout("$('.slide12 .ins').show();", 800);
+                            setTimeout("$('.slide12 .ins').show();", 200);
                         });
                         break;
                     case 19: //slide13
