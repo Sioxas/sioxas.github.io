@@ -815,10 +815,10 @@ body {
     width: 250px;
     height: 150px;
     margin-top: -75px;
-    margin-left:-125px;
+    margin-left: -125px;
     display: none;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     position: absolute;
 }
 
@@ -2559,9 +2559,9 @@ body {
 
 .pillar {
     height: 100%;
-    width: 15px;
+    width: 5px;
     margin: 0 auto;
-    background: #5c8db4;
+    background: #5d5f77;
     box-shadow: 3px 0 3px rgba(0, 0, 0, 0.42);
 }
 
@@ -2577,6 +2577,37 @@ body {
     left: 50%;
     margin-left: -16px;
     top: 8px;
+}
+
+.iteam .bigdot {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -25px;
+    background: linear-gradient(0deg, #585e7a, #707996);
+    box-shadow: 0px 3px 5px rgba(28, 28, 28, 0.46);
+    line-height: 50px;
+    font-size: 16px;
+    color: aliceblue;
+    text-shadow: 0px -1px #2d313f;
+}
+
+.iteam .littledot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -12.5px;
+    background: linear-gradient(0deg, #585e7a, #707996);
+    box-shadow: 0px 3px 5px rgba(28, 28, 28, 0.46);
+    line-height: 25px;
+    font-size: 16px;
+    color: aliceblue;
+    text-shadow: 0px -1px #2d313f;
 }
 
 .date {
@@ -2597,11 +2628,12 @@ body {
     position: relative;
     left: 50%;
     float: left;
-    border-radius: 10px;
     font-family: "微软雅黑", sans-serif;
     font-weight: 400;
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
     padding: 3px;
+    color: aliceblue;
+    text-shadow: 0px -1px #2d313f;
 }
 
 .event span {
@@ -2625,7 +2657,7 @@ body {
     margin-left: 22px;
     font-size: 18px;
     line-height: 20px;
-    height: 60px;
+    height: 40px;
 }
 
 #i2 {
@@ -2640,7 +2672,7 @@ body {
     margin-left: -160px;
     font-size: 18px;
     line-height: 20px;
-    height: 40px;
+    height: 60px;
 }
 
 #i3 {
@@ -2655,11 +2687,11 @@ body {
     margin-left: 22px;
     font-size: 18px;
     line-height: 20px;
-    height: 60px;
+    height: 40px;
 }
 
 #i4 {
-    top: 51%;
+    top: 80%;
 }
 
 #i4 .date {
@@ -2667,10 +2699,12 @@ body {
 }
 
 #i4 .event {
-    margin-left: -169px;
+    margin-left:-180px;
     font-size: 18px;
     line-height: 20px;
-    height: 40px;
+    height: 210px;
+    margin-top:-130px;
+    background:#cd3738;
 }
 /*slide15  end*/
 /*slide16 start*/
@@ -2693,10 +2727,12 @@ body {
     font-size: 18px;
     line-height: 20px;
     height: 60px;
+    margin-top:-20px;
+    background: #7e9875;
 }
 
 #i6 {
-    top: 75%;
+    top: 8%;
 }
 
 #i6 .date {
@@ -2707,11 +2743,13 @@ body {
     margin-left: -160px;
     font-size: 18px;
     line-height: 20px;
-    height: 80px;
+    height: 60px;
+    margin-top:-20px;
+    background:#3e999e;
 }
 
 #i7 {
-    top: 10%;
+    top: 20%;
 }
 
 #i7 .date {
@@ -2723,6 +2761,8 @@ body {
     font-size: 18px;
     line-height: 20px;
     height: 80px;
+    margin-top:-25px;
+    background:#967fb5;
 }
 /*slide16 end*/
 /*slide17 start*/
@@ -2740,7 +2780,7 @@ body {
 }
 
 #i8 {
-    top: 28%;
+    top: 35%;
 }
 
 #i8 .date {
@@ -2752,6 +2792,8 @@ body {
     font-size: 17px;
     line-height: 20px;
     height: 80px;
+    margin-top:-25px;
+    background: #6c7292;
 }
 
 #title1 {
@@ -2763,7 +2805,7 @@ body {
 /*slide18 end*/
 
 #i9 {
-    top: 50%;
+    top: 60%;
 }
 
 #i9 .date {
@@ -2772,10 +2814,11 @@ body {
 
 #i9 .event {
     margin-left: 22px;
-    margin-top: -50px;
+    margin-top: -25px;
     font-size: 16px;
     line-height: 20px;
-    height: 180px;
+    height: 80px;
+    background:#7e9875;
 }
 
 #i10 {
@@ -2791,6 +2834,8 @@ body {
     font-size: 17px;
     line-height: 20px;
     height: 80px;
+    margin-top:-20px;
+    background:#cd3738;
 }
 /*slide19 start*/
 
