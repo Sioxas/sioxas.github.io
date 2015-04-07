@@ -37,7 +37,8 @@
                 <span>一图看懂调研报告</span>
                 <div class="title">
                     <h1>传播正能量 网聚新农人</h1>
-                    <p><br/>——河北省涉农电子商务推广和发展的调研与实践</p>
+                    <p>
+                        <br/>——河北省涉农电子商务推广和发展的调研与实践</p>
                 </div>
                 <ul>
                     <li>
@@ -56,6 +57,22 @@
                 <p id="b">河北省涉农电子商务调研课题组</p>
             </div>
             <div class="swiper-slide slide2">
+                <h1>第1章  调研背景与意义</h1>
+                <div class="con">
+                    <div class="conleft">
+                        <h2>调研背景</h2>
+                        <img src="images/2.png"/>
+                    </div>
+                    <div class="conright">
+                        <h2>调研意义</h2>
+                        <ul>
+                            <li><img align="middle" src="images/dongli.png"/>带来社会发展新动力</li>
+                            <li><img align="middle" src="images/daxueshengpng.png"/>开辟大学生成长新基地</li>
+                            <li><img align="middle" src="images/xinhuoli.png"/>注入农村发展新活力</li>
+                            <li><img align="middle" src="images/zhengfu.png"/>提供政府决策新思路</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -68,12 +85,13 @@
                 keyboardControl: true,
                 onSlideNext: function (swiper) {
                     switch (mySwiper.activeIndex) {
-                            case 0:
-                            break;
+                    case 0:
+                        break;
                     }
                 }
             });
         });
+
         function myloading() {
             $(".slide1 ul li:nth-child(1)").show();
             $(".slide1 ul li:nth-child(1)").animo({
@@ -89,8 +107,8 @@
                     $(".slide1 ul li:nth-child(3)").animo({
                         animation: "lightSpeedIn",
                         duration: 0.5
-                    },function(){
-                        
+                    }, function () {
+
                         $(".slide1 .title").show();
                     });
                 });
