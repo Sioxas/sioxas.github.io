@@ -53,6 +53,7 @@ body {
     left: 50%;
     margin-left: -113px;
     font-family: Source-Han-Light248231, sans-serif;
+    display:none;
 }
 
 .slide1 ul {
@@ -120,7 +121,7 @@ body {
 
 .slide2 .con .conleft img{width:100%;}
 
-.slide2 .con .conleft h2 {
+.slide2 .con .conleft h3 {
     text-indent: 10px;
     color: #fff;
 }
@@ -131,14 +132,295 @@ body {
 
 }
 
-.slide2 .con .conright h2 {
+.slide2 .con .conright h3 {
     text-indent: 10px;
     color: #fff;
 }
-.slide2 .con .conright ul{list-style:none;width:80%;margin:0 auto;}
+.slide2 .con .conright ul{list-style:none;width:80%;margin:0 auto;margin-top:20px;}
 .slide2 .con .conright ul li{line-height: 40px;border-radius: 5px;margin:5px;text-align: center;font-family: Source-Han-Light248231, sans-serif;}
 .slide2 .con .conright ul li img{width:40px;float: left;}
 .slide2 .con .conright ul li:nth-child(1){background:#f9a92c;}
 .slide2 .con .conright ul li:nth-child(2){background:#64ff00;}
 .slide2 .con .conright ul li:nth-child(3){background:#eaf756;}
 .slide2 .con .conright ul li:nth-child(4){background:#b694d3;}
+
+.slide3{position: relative;text-align: center;background: #30aedf;}
+.slide3 h1{color:#fff;margin-top:20px;}
+.slide3 h4{color:#fff;text-align: left;}
+.slide3 .bigcon{height:200px;list-style: none;}
+.slide3 .bigcon .bigconli{width:50%;height:100%;float:left;position: relative;}
+.slide3 .bigcon .bigconli:nth-child(1) p{position: absolute;bottom: 0;font-family: Source-Han-Light248231, sans-serif;}
+#chart2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #30aedf;
+    position: absolute;
+    transform: scale(0.5,0.5);
+}
+
+#chart2innerMask {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    background-color: #30aedf;
+    z-index: 3;
+    top: 50px;
+    left: 50px;
+}
+
+#chart2innerMask img {
+    width: 80px;
+    margin-top: 20px;
+}
+#chart2 .ins {
+   position: absolute;
+    margin-left: -50px;margin-top:-60px;
+/*    display: none;*/
+}
+
+.pi {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.left {
+    width: 100px;
+    height: 200px;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    float: left;
+    opacity: 0;
+}
+
+.right {
+    width: 100px;
+    height: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    float: left;
+}
+
+.bkblue {
+    background-color: #0c90c5;
+}
+
+.bkblue1 {
+    background-color: #0b77a5;
+}
+
+.bkyellow {
+    background-color: #ffcc00;
+}
+
+.bkblue2 {
+    background-color: #07657c;
+}
+
+.sp1 {
+    -webkit-animation: spin1 1s;
+    animation: spin1 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.sp2 {
+    -webkit-animation: spin2 1s;
+    animation: spin2 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.sp3 {
+    -webkit-animation: spin3 1s;
+    animation: spin3 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.sp4 {
+    -webkit-animation: spin4 1s;
+    animation: spin4 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.sp5 {
+    -webkit-animation: spin5 1s;
+    animation: spin5 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes spin1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+    }
+}
+
+@keyframes spin1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes spin2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(157.5deg);
+    }
+}
+
+@keyframes spin2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(157.5deg);
+    }
+}
+
+@-webkit-keyframes spin3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(135deg);
+    }
+}
+
+@keyframes spin3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+@-webkit-keyframes spin4 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(25deg);
+    }
+}
+
+@keyframes spin4 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(25deg);
+    }
+}
+
+@-webkit-keyframes spin5 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes spin5 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+#chart3 {
+    width: 250px;
+    height:200px;
+    display: none;
+    position: absolute;
+    transform:scale(0.7,0.7);
+}
+
+#chart3 .leftCon {
+    float: left;
+}
+
+#chart3 .leftCon ul {
+    list-style: none;
+}
+
+#chart3 .leftCon ul li {
+    line-height: 30px;
+    font-family: Source-Han-Light248231, sans-serif;
+    margin: 10px 0;
+}
+
+#chart3 .leftCon ul li img {
+    height: 30px;
+    display: block;
+    margin: 0px auto;
+}
+
+#chart3 .rightCon {
+    float: left;
+}
+
+#chart3 .rightCon ul {
+    list-style: none;
+}
+
+#chart3 .rightCon ul li {
+    height: 30px;
+    margin: 10px 0;
+}
+
+#chart3 .rightCon ul li div {
+    height: 30px;
+    text-align: right;
+    color: #fff;
+    line-height: 30px;
+    text-indent: 7px;
+    border-radius: 15px;
+}
+
+#chart3 .rightCon ul li div span {
+    float: left;
+    font-family: Source-Han-Light248231, sans-serif;
+}
+
+#chart3 .rightCon ul li .l1 {
+    background: #70ad47;
+    width: 197px;
+}
+
+#chart3 .rightCon ul li .l2 {
+    background: #3077b5;
+    width: 156px;
+}
+
+#chart3 .rightCon ul li .l3 {
+    background: #ec7e31;
+    width: 125px;
+}
+
+#chart3 .rightCon ul li .l4 {
+    background: #7f7f7e;
+    width: 78px;
+}
+
+#chart3 .rightCon ul li .l4 div {
+    position: absolute;
+    height: 30px;
+    width: 140px;
+    background: #ffcc00;
+}

@@ -60,19 +60,95 @@
                 <h1>第1章  调研背景与意义</h1>
                 <div class="con">
                     <div class="conleft">
-                        <h2>调研背景</h2>
-                        <img src="images/2.png"/>
+                        <h3>调研背景</h3>
+                        <img src="images/2.png" />
                     </div>
                     <div class="conright">
-                        <h2>调研意义</h2>
+                        <h3>调研意义</h3>
                         <ul>
-                            <li><img align="middle" src="images/dongli.png"/>带来社会发展新动力</li>
-                            <li><img align="middle" src="images/daxueshengpng.png"/>开辟大学生成长新基地</li>
-                            <li><img align="middle" src="images/xinhuoli.png"/>注入农村发展新活力</li>
-                            <li><img align="middle" src="images/zhengfu.png"/>提供政府决策新思路</li>
+                            <li><img align="middle" src="images/dongli.png" />带来社会发展新动力</li>
+                            <li><img align="middle" src="images/daxueshengpng.png" />开辟大学生成长新基地</li>
+                            <li><img align="middle" src="images/xinhuoli.png" />注入农村发展新活力</li>
+                            <li><img align="middle" src="images/zhengfu.png" />提供政府决策新思路</li>
                         </ul>
                     </div>
                 </div>
+            </div>
+            <div class="swiper-slide slide3">
+                <h1>第2章 河北省涉农电子商务<br/>推广和发展现状及问题</h1>
+                <ul class="bigcon">
+                    <li class="bigconli">
+                        <div id="chart2">
+                            <div id="chart2innerMask"><img src="images/%EF%BF%A5.png" />
+                            </div>
+
+                            <div id="pi1" class="pi">
+                                <div class="left"></div>
+                                <div class="right bkblue2"></div>
+                            </div>
+                            <div id="pi2" class="pi">
+                                <div class="left"></div>
+                                <div class="right bkblue1"></div>
+                            </div>
+                            <div id="pi3" class="pi">
+                                <div class="left"></div>
+                                <div class="right bkblue"></div>
+                            </div>
+                            <div id="pi4" class="pi">
+                                <div class="left"></div>
+                                <div class="right bkyellow"></div>
+                            </div>
+                            <div id="pi5" class="pi">
+                                <div class="left"></div>
+                                <div class="right bkyellow"></div>
+                            </div>
+                            <div class="ins">
+                                <img src="images/slide2ins.png" />
+                            </div>
+                        </div>
+                        <p>电子商务对农民收入的影响</p>
+                    </li>
+                    <li class="bigconli">
+                        <div id="chart3">
+                            <div class="leftCon">
+                                <ul>
+                                    <li><img src="images/nqr.png" />
+                                    </li>
+                                    <li><img src="images/cgb.png" />
+                                    </li>
+                                    <li><img src="images/nm.png" />
+                                    </li>
+                                    <li><img src="images/qt.png" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="rightCon">
+                                <ul>
+                                    <li>
+
+                                        <div class="l1"><span>年轻人</span>68.43%</div>
+                                    </li>
+                                    <li>
+
+                                        <div class="l2"><span>干部领导</span>24.19%</div>
+                                    </li>
+                                    <li>
+
+                                        <div class="l3"><span>农民</span>6.68%</div>
+                                    </li>
+                                    <li>
+
+                                        <div class="l4"><span>其他</span>0.69%</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="bigcon">
+                    <li class="bigconli"></li>
+                    <li class="bigconli"></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -86,6 +162,16 @@
                 onSlideNext: function (swiper) {
                     switch (mySwiper.activeIndex) {
                     case 0:
+                        break;
+                    case 2:
+                        $("#pi1").addClass("sp1");
+                        $("#pi2").addClass("sp2");
+                        $("#pi3").addClass("sp3");
+                        $("#pi4").addClass("sp4");
+                        $("#pi5").addClass("sp5");
+                        setTimeout("$('.slide2 .ins').show();", 1000);
+                        $("#chart3").show();
+                        $("#chart3 .rightCon ul li div").addClass("lani");
                         break;
                     }
                 }
@@ -110,6 +196,7 @@
                     }, function () {
 
                         $(".slide1 .title").show();
+                        setTimeout("$('#b').show();", 200);
                     });
                 });
             });
