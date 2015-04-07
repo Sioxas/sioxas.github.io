@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <title>河北省涉农电子商务发展报告</title>
+    <link rel="stylesheet" href="css/vertical_swiper_style.css">
+    <link rel="stylesheet" href="css/demo_styles.css">
+    <link rel="stylesheet" href="animate+animo.css">
+    <link href='http://www.youziku.com/webfont/CSS/492e248a524dde203923c58b4260a325' rel='stylesheet' type='text/css' />
+    <!--思源黑体-->
+    <link href='http://www.youziku.com/webfont/CSS/258589d94bfdb9d05c507dd0e67e8072' rel='stylesheet' type='text/css' />
+    <!--综艺简体-->
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+    <script type="text/javascript" src="js/chartData.js"></script>
+    <script type="text/javascript" src="js/chart.min.js"></script>
+    <script type="text/javascript" src="animo.js"></script>
+    <style>
+        /* Demo Styles */
+    </style>
+</head>
+
+<body onload=myloading()>
+    <!--
+    <div class="swipertip"><img src="images/web-swipe-tip.png" />
+    </div>
+-->
+    <div class="swiper-container">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+                <h3>一图看懂调研报告</h3>
+                <div class="title">
+                    <h1>传播正能量 网聚新农人</h1>
+                    <p><br/>——河北省涉农电子商务推广和发展的调研与实践</p>
+                </div>
+                <ul>
+                    <li>
+                        <img src="images/smile.png" />
+                        <p>为了老乡灿烂的笑容</p>
+                    </li>
+                    <li>
+                        <img src="images/view.png" />
+                        <p>为了家乡更美的风景</p>
+                    </li>
+                    <li>
+                        <img src="images/food.png" />
+                        <p>为了独特乡味的推广</p>
+                    </li>
+                </ul>
+                <p id="b">河北省涉农电子商务调研课题组</p>
+            </div>
+            <div class="swiper-slide slide2">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var mySwiper = new Swiper('.swiper-container', {
+                mode: 'vertical',
+                speed: 600,
+                mousewheelControl: true,
+                keyboardControl: true,
+                onSlideNext: function (swiper) {
+                    switch (mySwiper.activeIndex) {
+                            case 0:
+                            break;
+                    }
+                }
+            });
+        });
+        function myloading() {
+            $(".slide1 ul li:nth-child(1)").show();
+            $(".slide1 ul li:nth-child(1)").animo({
+                animation: "lightSpeedIn",
+                duration: 0.5
+            }, function () {
+                $(".slide1 ul li:nth-child(2)").show();
+                $(".slide1 ul li:nth-child(2)").animo({
+                    animation: "lightSpeedIn",
+                    duration: 0.5
+                }, function () {
+                    $(".slide1 ul li:nth-child(3)").show();
+                    $(".slide1 ul li:nth-child(3)").animo({
+                        animation: "lightSpeedIn",
+                        duration: 0.5
+                    },function(){
+                        
+                        $(".slide1 .title").show();
+                    });
+                });
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>
