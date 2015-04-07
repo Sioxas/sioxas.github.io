@@ -19,15 +19,15 @@ body {
 .slide1 .title{position: absolute;width:350px;left:50%;margin-left:-175px;top:50%;text-align: center;margin-top:-70px;display:none;}
 .slide1 .title h1{}
 .slide1 .title p{position: relative;font-size: 14px;}
-.slide1 h3{position: absolute;}
-.slide1 #b{position: absolute;bottom:0px;left:50%;margin-left:-113px;}
+.slide1 span{position: absolute;font-family: Source-Han-Light248231, sans-serif;font-size: 12px;}
+.slide1 #b{position: absolute;bottom:0px;left:50%;margin-left:-113px;font-family: Source-Han-Light248231, sans-serif;}
 .slide1 ul {
     width: 200px;
     height: 160px;
     position: absolute;
     right:0px;
     list-style: none;
-    bottom:5px;
+    bottom:10px;
     color:#fff;
 }
 
