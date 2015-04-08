@@ -859,7 +859,7 @@ body {
     left: 50%;
     margin-left: -140px;
     top: 50%;
-    margin-top: -70px;
+    margin-top: -100px;
 }
 
 #slide4con ul {
@@ -870,11 +870,11 @@ body {
 
 #slide4con ul .outer {
     border-radius: 10px;
-    margin: 5px 0;
+    margin: 20px 0;
 }
 
 #slide4con ul .outer:nth-child(1) {
-    background: #b694d3;
+    background: #0aff00;
 }
 
 #slide4con ul .outer:nth-child(2) {
