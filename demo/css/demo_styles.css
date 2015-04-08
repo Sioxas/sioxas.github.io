@@ -848,3 +848,48 @@ body {
 #line7 {
     width: 120px;
 }
+
+.slide4{position: relative;background:#30aedf;}
+.slide4 h2{color:#fff;margin-top:20px;text-indent: 10px;}
+.slide4 h3{width:280px;margin:10px auto;text-indent:40px;}
+#slide4con {
+    position: absolute;
+    width: 280px;
+    height: 260px;
+    left: 50%;
+    margin-left: -140px;
+    top: 50%;
+    margin-top: -120px;
+}
+
+#slide4con ul {
+    list-style: none;
+}
+
+#slide4con ul li h1{text-align: center;}
+
+#slide4con ul .outer {
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#slide4con ul .outer:nth-child(1) {
+    background: #f79646;
+}
+
+#slide4con ul .outer:nth-child(2) {
+    background: #9bbb59;
+}
+
+#slide4con ul .outer:nth-child(3) {
+    background: #f7e946;
+}
+
+#slide4con ul li ul {
+    width: 240px;
+    margin: auto;
+    text-align: left;
+    list-style: disc;
+    list-style-position: inside;
+    font-size: 16px;
+}
