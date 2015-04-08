@@ -482,15 +482,15 @@ body {
 }
 
 #list4_1 .label {
-    color: #4f81bd;
+    color: #000aff;
 }
 
 #list4_2 .label {
-    color: #f79646;
+    color: #953735;
 }
 
 #list4_3 .label {
-    color: #9bbb59;
+    color: #acff00;
 }
 
 #list4_4 .label {
@@ -893,3 +893,12 @@ body {
     list-style-position: inside;
     font-size: 16px;
 }
+
+
+.slide5{background:#30aedf;position: relative;}
+.slide5 h2{margin-top:20px;text-align: center;color:#fff;}
+.slide5 p{text-align: center;margin:20px 0;display:none;}
+.slide5 h3{text-align: center;display:none;margin:20px;font-size: 60px;}
+#con3_1{text-align: center;}
+#con3_1 span{color:#fff;position: absolute;left:20px;font-size: 18px;}
+#con3_1 img{width:230px;margin:10px auto;}

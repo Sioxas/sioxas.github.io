@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="swiper-slide slide3">
-                <h2>第2章推广和发展现状及问题</h2>
+                <h2>第2章 推广和发展现状及问题</h2>
                 <p style="text-align:left;color:#fff;text-indent:20px;margin-top:20px;font-size:18px;">发展现状</p>
                 <ul class="bigcon">
                     <li class="bigconli">
@@ -193,59 +193,59 @@
                     </li>
                     <li class="bigconli">
                         <div id="chart7_1">
-                    <div id="circleX">
-                        <div id="yellowCircle"></div>
-                        <div id="whiteCircle"></div>
-                        <div id="Sector1">
-                            <div class="hold">
-                                <div class="pie"></div>
-                            </div>
-                            <div class="circle"></div>
-                        </div>
-                        <div id="Sector2">
-                            <div class="hold">
-                                <div class="pie"></div>
-                            </div>
-                            <div class="circle"></div>
-                        </div>
-                        <div id="Sector3">
-                            <div class="hold">
-                                <div class="pie"></div>
-                            </div>
-                            <div class="circle"></div>
-                        </div>
-                        <div id="grayCircle"><span><br/>涉农电商企业<br/>人才聘用情况
+                            <div id="circleX">
+                                <div id="yellowCircle"></div>
+                                <div id="whiteCircle"></div>
+                                <div id="Sector1">
+                                    <div class="hold">
+                                        <div class="pie"></div>
+                                    </div>
+                                    <div class="circle"></div>
+                                </div>
+                                <div id="Sector2">
+                                    <div class="hold">
+                                        <div class="pie"></div>
+                                    </div>
+                                    <div class="circle"></div>
+                                </div>
+                                <div id="Sector3">
+                                    <div class="hold">
+                                        <div class="pie"></div>
+                                    </div>
+                                    <div class="circle"></div>
+                                </div>
+                                <div id="grayCircle"><span><br/>涉农电商企业<br/>人才聘用情况
                             </span>
-                        </div>
-                    </div>
+                                </div>
+                            </div>
 
-                    <ul class="legend">
-                        <li>
-                            <div class="dot0 legend4"></div>
-                            <div class="text">难找 12.12%</div>
-                            <div class="dot1 legend4"></div>
-                            <div class="line legend4" id="line4"></div>
-                        </li>
-                        <li>
-                            <div class="dot0 legend5"></div>
-                            <div class="text">人员流动频繁 15.15%</div>
-                            <div class="dot1 legend5"></div>
-                            <div class="line legend5" id="line5"></div>
-                        </li>
-                        <li>
-                            <div class="dot0 legend6"></div>
-                            <div class="text">容易找 18.18%</div>
-                            <div class="dot1 legend6"></div>
-                            <div class="line legend6" id="line6"></div>
-                        </li>
-                        <li>
-                            <div class="dot0 legend7"></div>
-                            <div class="text">暂不需要 54.55%</div>
-                            <div class="dot1 legend7"></div>
-                            <div class="line legend7" id="line7"></div>
-                        </li>
-                    </ul>
-                </div>
+                            <ul class="legend">
+                                <li>
+                                    <div class="dot0 legend4"></div>
+                                    <div class="text">难找 12.12%</div>
+                                    <div class="dot1 legend4"></div>
+                                    <div class="line legend4" id="line4"></div>
+                                </li>
+                                <li>
+                                    <div class="dot0 legend5"></div>
+                                    <div class="text">人员流动频繁 15.15%</div>
+                                    <div class="dot1 legend5"></div>
+                                    <div class="line legend5" id="line5"></div>
+                                </li>
+                                <li>
+                                    <div class="dot0 legend6"></div>
+                                    <div class="text">容易找 18.18%</div>
+                                    <div class="dot1 legend6"></div>
+                                    <div class="line legend6" id="line6"></div>
+                                </li>
+                                <li>
+                                    <div class="dot0 legend7"></div>
+                                    <div class="text">暂不需要 54.55%</div>
+                                    <div class="dot1 legend7"></div>
+                                    <div class="line legend7" id="line7"></div>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -280,8 +280,20 @@
                     </ul>
                 </div>
             </div>
-            <div class="swiper-slide slide4">
-                
+            <div class="swiper-slide slide5">
+                <h2>第3章 推广和发展问题追踪</h2>
+                <p>通过对河北省涉农电子商务发展现状<br/><br/>层层深入、追根溯源,课题组发现问题多属：
+
+                </p>
+                <h3>信息失衡</h3>
+                <div id="con3_1">
+                    <span>农商市场信息失衡</span>
+                    <img style="margin-top:30px;" src="images/nongmin.png"/>
+                    <img src="images/dianshang.png"/>
+                </div>
+            </div>
+            <div class="swiper-slide slide6">
+
             </div>
         </div>
     </div>
@@ -307,6 +319,15 @@
                         $("#chart3 .rightCon ul li div").addClass("lani");
                         $("#chart4").show();
                         $("#chart4 ul li .Triangle").addClass("scaleYani");
+                        break;
+                    case 4:
+                        $(".slide5 p").show();
+                        $(".slide5 p").animo({
+                            animation: "lightSpeedIn",
+                            duration:0.5
+                        }, function () {
+                            setTimeout("$('.slide5 p').hide();$('.slide5 h3').show();$('.slide5 h3').animo({animation: 'lightSpeedIn',duration: 0.5});",1000);
+                        });
                         break;
                     }
                 }
