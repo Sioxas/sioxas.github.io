@@ -156,10 +156,11 @@ body {
     border-radius: 50%;
     background-color: #30aedf;
     position: absolute;
+    transform: scale(0.5);
     -webkit-transform: scale(0.5);
     -moz-transform: scale(0.5);
     -o-transform: scale(0.5);
-    transform: scale(0.5);
+    
 }
 
 #chart2innerMask {
@@ -351,10 +352,11 @@ body {
     height:200px;
     display: none;
     position: absolute;
+    transform:scale(0.7,0.7);
     -webkit-transform:scale(0.7,0.7);
     -o-transform:scale(0.7,0.7);
     -moz-transform:scale(0.7,0.7);
-    transform:scale(0.7,0.7);
+    
 }
 
 #chart3 .leftCon {
@@ -438,10 +440,11 @@ body {
     margin-top:-50px;
     margin-left:-30px;
     display: none;
+    transform:scale(0.7);
     -webkit-transform:scale(0.7);
     -moz-transform:scale(0.7);
     -o-transform:scale(0.7);
-    transform:scale(0.7);
+    
 }
 
 #chart4 ul {
@@ -607,10 +610,11 @@ body {
 }
 
 #chart7_1 {
+    transform: scale(0.4);
     -webkit-transform: scale(0.4);
     -moz-transform: scale(0.4);
     -o-transform: scale(0.4);
-    transform: scale(0.4);
+    
     margin-top:-120px;
     margin-left:-30px;
 }
