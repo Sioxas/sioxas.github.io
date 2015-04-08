@@ -136,7 +136,7 @@ body {
     text-indent: 10px;
     color: #fff;
 }
-.slide2 .con .conright ul{list-style:none;width:80%;margin:0 auto;margin-top:20px;}
+.slide2 .con .conright ul{list-style:none;width:80%;margin:0 auto;margin-top:20px;transform:scaleY(0.8);transform-origin: 0% 0%;}
 .slide2 .con .conright ul li{line-height: 40px;border-radius: 5px;margin:5px;text-align: center;font-family: Source-Han-Light248231, sans-serif;}
 .slide2 .con .conright ul li img{width:40px;float: left;}
 .slide2 .con .conright ul li:nth-child(1){background:#f9a92c;}
@@ -145,15 +145,16 @@ body {
 .slide2 .con .conright ul li:nth-child(4){background:#b694d3;}
 
 .slide3{position: relative;text-align: center;background: #30aedf;}
-.slide3 h1{color:#fff;margin-top:20px;}
+.slide3 h2{color:#fff;margin-top:10px;}
 .slide3 h4{color:#fff;text-align: left;}
-.slide3 .bigcon{height:200px;list-style: none;margin-top:10px;}
+.slide3 .bigcon{height:200px;list-style: none;}
 .slide3 .bigcon .bigconli{width:50%;height:100%;float:left;position: relative;}
-.slide3 .bigcon .bigconli p{position: absolute;bottom: 0;font-size: 14px;}
+.slide3 .bigcon .bigconli p{position: absolute;bottom: 0;font-size: 14px;width:100%;transform:scaleX(0.8);}
 #chart2 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    margin-left:-10px;
     background-color: #30aedf;
     position: absolute;
     transform: scale(0.5);
@@ -356,7 +357,7 @@ body {
     -webkit-transform:scale(0.7,0.7);
     -o-transform:scale(0.7,0.7);
     -moz-transform:scale(0.7,0.7);
-    
+    margin-left:-40px;
 }
 
 #chart3 .leftCon {
@@ -423,7 +424,7 @@ body {
 
 #chart3 .rightCon ul li .l4 {
     background: #7f7f7e;
-    width: 78px;
+    width: 89px;
 }
 
 #chart3 .rightCon ul li .l4 div {
@@ -438,7 +439,7 @@ body {
     width: 280px;
     height: 220px;
     margin-top:-50px;
-    margin-left:-30px;
+    margin-left:-50px;
     display: none;
     transform:scale(0.5);
     -webkit-transform:scale(0.5);
@@ -493,7 +494,7 @@ body {
 }
 
 #list4_4 .label {
-    color: #00b0f0;
+    color: #2500f0;
 }
 
 #list4_5 .label {
@@ -517,7 +518,7 @@ body {
 }
 
 #list4_4 .Triangle {
-    border-bottom: 90.90px solid rgba(0, 176, 240, 0.6);
+    border-bottom: 90.90px solid rgba(0, 18, 240, 0.6);
 }
 
 #list4_5 .Triangle {
@@ -614,9 +615,8 @@ body {
     -webkit-transform: scale(0.4);
     -moz-transform: scale(0.4);
     -o-transform: scale(0.4);
-    
     margin-top:-120px;
-    margin-left:-30px;
+    margin-left:-60px;
 }
 
 #circleX {
