@@ -1073,3 +1073,69 @@ body {
     height: 20px;
     font-size: 16px;
 }
+
+
+.slide7 {
+    background: #30aedf;
+    position: relative;
+}
+.slide7 h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+.slide7 ul{width:100%;position: absolute;top:50%;margin-top:-200px;height:400px;}
+.slide7 ul li{height:100px;}
+.slide7 img{width:300px;margin-top:50px;position: absolute;left:50%;margin-left: -150px;}
+
+.slide8 {
+    background: #30aedf;
+    position: relative;
+}
+.slide8 h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+.slide8 .stru{margin: 20px;text-indent:30px;}
+.slide8 .slide8li{width:150px;height:300px;float: left;background:#ffcc00;position: absolute;left:50%;top:50%;margin-top:-100px;}
+.slide8 .slide8li:nth-child(3){margin-left:-155px;}
+.slide8 .slide8li:nth-child(4){margin-left:5px;}
+.slide8 .slide8li span{font-size:18px;color:#fff;margin-top:5px;}
+.slide8 .slide8li img{width:50px;height:50px;margin:5px;}
+.slide8 .slide8li p{margin:10px;text-indent:30px;}
+#xbk{width:140px;height:120px;}
+
+.slide9 {
+    background: #30aedf;
+    position: relative;
+}
+.slide9 span {
+    margin-top: -30px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    left: 2px;
+}
+#yxhd{position:absolute;width:300px;height:150px;left:50%;top:50%;margin-left:-150px;margin-top:-200px;}
+#yxhd div{height:80px;}
+#yxhd div img{width:150px;height:100px;float:left;display: inline;margin: 5px;}
+#ygpt{position:absolute;width:300px;height:150px;left:50%;top:50%;margin-left:-150px;}
+#ygpt img{width:155px;height:100%;display:inline;float:left;}
+#ygpt ul{display:inline;width:130px;float:left;list-style-position:inside;}
+#ygpt ul li{width:150px;line-height: 50px;}
+.slide10 {
+    background: #30aedf;
+    position: relative;
+}
+
+.slide10 span {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    left: 20px;
+}
+.slide10 img{position:absolute;left:50%;top:50%;margin-left:-130px;margin-top:-130px;}
