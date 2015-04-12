@@ -62,11 +62,11 @@
                 <img class="title" src="images/title1.png" />
                 <div class="con">
                     <div class="conleft">
-                        <img class="t" src="images/t1.png" />
-                        <img class="images" src="images/2.png" />
+                        <img class="t ani1" src="images/t1.png" />
+                        <img class="images ani2" src="images/2.png" />
                     </div>
                     <div class="conright">
-                        <img class="t" src="images/t2.png" />
+                        <img class="t ani3" src="images/t2.png" />
                         <ul>
                             <li><img align="middle" src="images/dongli.png" />带来社会发展新动力</li>
                             <li><img align="middle" src="images/daxueshengpng.png" />开辟大学生成长新基地</li>
@@ -76,9 +76,11 @@
                     </div>
                 </div>
             </div>
+            
+            
             <div class="swiper-slide slide3">
                 <img class="title" src="images/title2.png" />
-                <img class="t" src="images/t3.png" />
+                <img class="t" style="position:absolute;left:10px;" src="images/t3.png" />
                 <ul class="bigcon">
                     <li class="bigconli">
                         <div id="chart2">
@@ -254,7 +256,7 @@
 
 
             <div class="swiper-slide slide4">
-                <img class="t" src="images/t4.png" />
+                <img class="t" style="margin-top:15px;" src="images/t4.png" />
                 <h3>经过前期调研以及专业数据分析，我们发现河北省开展涉农电商有以下几种发展阻力：</h3>
                 <div id="slide4con">
                     <ul>
@@ -344,11 +346,11 @@
                 <img class="title" src="images/title5.png" />
                 <p class="stru">通过对问题的分析，课题组制定了“一封信函、一本手册、一项活动、一个平台”四项解决方案。
                 </p>
-                <div class="slide8li">
+                <div class="slide8li ani4">
                     <img src="images/yfxh.png" />
                     <p>形成《河北省涉农电子商务发展建议总述》，向河北省政府、河北省农业厅、河北省商务厅等各级政府部门提交.</p>
                 </div>
-                <div class="slide8li">
+                <div class="slide8li ani5">
                     <img src="images/sc.png" />
                     <p>针对农村电子商务普及率低的现状，团队精心打造电子商务宣传手册《电商小百科》。</p>
                 </div>
@@ -382,13 +384,13 @@
 
             <div class="swiper-slide slide11">
                 <img class="title" src="images/title6.png" />
-                <p>河北省涉农电子商务的推广与发展
+                <p class="ani6">河北省涉农电子商务的推广与发展
                     <br/>是一个宏大的命题
                     <br/>我们还在路上,任重而道远
                     <br/>我们希望
                     <br/>在这条路上能有更多人的身影......</p>
                 <a class="orange button">爱帮农</a>
-                <img class="mifeng" src="images/mifeng.png" />
+                <img class="mifeng ani7" src="images/mifeng.png" />
                 <img class="qrcode" src="images/qrcode_for_abn.jpg" />
                 <div class="mask"></div>
             </div>
@@ -407,8 +409,10 @@
                     case 0:
                         break;
                     case 1:
-                        $('.conright ul li').show();
-                        $('.conright ul li').addClass('lani');
+                        setTimeout("$('.ani1').show();$('.ani1').addClass('lani');",0);
+                            setTimeout("$('.ani2').show();$('.ani2').addClass('lani');",600);
+                            setTimeout("$('.ani3').show();$('.ani3').addClass('lani');",1200);
+                        setTimeout("$('.conright ul li').show();$('.conright ul li').addClass('lani');",1800);
                         break;
                     case 2:
                         $("#pi1").addClass("sp1");
@@ -422,8 +426,9 @@
                         setTimeout("$('#chart7_1').show();$('#chart7_1').addClass('scaleP');", 1800);
                         break;
                     case 3:
-                        $("#slide4con ul .outer").show();
-                        $("#slide4con ul .outer").addClass("lani");
+                        setTimeout("$('#slide4con ul .outer:nth-child(1)').show();$('#slide4con ul .outer:nth-child(1)').addClass('lani');",0);
+                            setTimeout("$('#slide4con ul .outer:nth-child(2)').show();$('#slide4con ul .outer:nth-child(2)').addClass('lani');",600);
+                            setTimeout("$('#slide4con ul .outer:nth-child(3)').show();$('#slide4con ul .outer:nth-child(3)').addClass('lani');",1200);
                         break;
                     case 4:
                         $(".slide5 p").show();
@@ -439,8 +444,8 @@
                         $('.zwp').addClass('cani');
                         break;
                     case 7:
-                        $('.slide8li').show();
-                        $('.slide8li').addClass('hani');
+                        setTimeout("$('.ani4').show();$('.ani4').addClass('hani');",0);
+                            setTimeout("$('.ani5').show();$('.ani5').addClass('hani');",600);
                         break;
                     case 8:
 
@@ -459,13 +464,20 @@
                         setTimeout("$('.slide10 .pts img:nth-child(5)').show();", 2500);
                         break;
                     case 10:
+                            setTimeout("$('.ani6').show();$('.ani6').addClass('cani');",0);
+                            setTimeout("$('.ani7').show();$('.ani7').addClass('cani');",600);
                         $(".slide11 .button").click(function () {
                             $(".slide11 .qrcode").show();
                             $(".slide11 .mask").show();
+                            $(".slide11 .qrcode").animate({opacity:'1.0'},500);
+                            
+                            $(".slide11 .mask").animate({opacity:'0.8'},200);
+                            
                         });
                         $(".slide11 .mask").click(function () {
-                            $(".slide11 .qrcode").hide();
-                            $(".slide11 .mask").hide();
+                            $(".slide11 .qrcode").animate({opacity:'0'},200);
+                            $(".slide11 .mask").animate({opacity:'0'},200);
+                            setTimeout("$('.slide11 .qrcode').hide();$('.slide11 .mask').hide();",200);
                         });
                         break;
                     }
