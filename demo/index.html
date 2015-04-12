@@ -56,15 +56,17 @@
                 </ul>
                 <p id="b">河北省涉农电子商务调研课题组</p>
             </div>
+
+
             <div class="swiper-slide slide2">
                 <img class="title" src="images/title1.png" />
                 <div class="con">
                     <div class="conleft">
-                        <span>调研背景</span>
-                        <img src="images/2.png" />
+                        <img class="t" src="images/t1.png" />
+                        <img class="images" src="images/2.png" />
                     </div>
                     <div class="conright">
-                        <span>调研意义</span>
+                        <img class="t" src="images/t2.png" />
                         <ul>
                             <li><img align="middle" src="images/dongli.png" />带来社会发展新动力</li>
                             <li><img align="middle" src="images/daxueshengpng.png" />开辟大学生成长新基地</li>
@@ -76,7 +78,7 @@
             </div>
             <div class="swiper-slide slide3">
                 <img class="title" src="images/title2.png" />
-                <p style="text-align:left;color:#fff;text-indent:20px;margin-top:20px;font-size:18px;">发展现状</p>
+                <img class="t" src="images/t3.png" />
                 <ul class="bigcon">
                     <li class="bigconli">
                         <div id="chart2">
@@ -252,7 +254,7 @@
 
 
             <div class="swiper-slide slide4">
-                <p>存在的问题</p>
+                <img class="t" src="images/t4.png" />
                 <h3>经过前期调研以及专业数据分析，我们发现河北省开展涉农电商有以下几种发展阻力：</h3>
                 <div id="slide4con">
                     <ul>
@@ -293,16 +295,16 @@
 
                 </p>
                 <h3>信息失衡</h3>
+                <img class="t" src="images/t5.png" />
                 <div id="con3_1">
-                    <span>农商市场信息失衡</span>
                     <img style="margin-top:30px;" src="images/nongmin.png" />
                     <img src="images/dianshang.png" />
                 </div>
             </div>
 
             <div class="swiper-slide slide6">
-                <span>信息失衡原因分析</span>
-                <img style="width:120px;margin-top:65px;position:relative;left:50%;margin-left:-60px;" src="images/zwp.png" />
+                <img class="t" style="margin-top:20px;" src="images/t5.png" />
+                <img class="zwp" src="images/zwp.png" />
                 <ul>
                     <li>
                         <img src="images/Temple.png" />
@@ -379,11 +381,15 @@
 
 
             <div class="swiper-slide slide11">
-                <img class="title" src="images/title6.png"/>
-                <p>河北省涉农电子商务的推广与发展<br/>是一个宏大的命题<br/>我们还在路上,任重而道远<br/>我们希望<br/>在这条路上能有更多人的身影......</p>
+                <img class="title" src="images/title6.png" />
+                <p>河北省涉农电子商务的推广与发展
+                    <br/>是一个宏大的命题
+                    <br/>我们还在路上,任重而道远
+                    <br/>我们希望
+                    <br/>在这条路上能有更多人的身影......</p>
                 <a class="orange button">爱帮农</a>
-                <img class="mifeng" src="images/mifeng.png"/>
-                <img class="qrcode" src="images/qrcode_for_abn.jpg"/>
+                <img class="mifeng" src="images/mifeng.png" />
+                <img class="qrcode" src="images/qrcode_for_abn.jpg" />
                 <div class="mask"></div>
             </div>
 
@@ -400,6 +406,10 @@
                     switch (mySwiper.activeIndex) {
                     case 0:
                         break;
+                    case 1:
+                        $('.conright ul li').show();
+                        $('.conright ul li').addClass('lani');
+                        break;
                     case 2:
                         $("#pi1").addClass("sp1");
                         $("#pi2").addClass("sp2");
@@ -407,10 +417,9 @@
                         $("#pi4").addClass("sp4");
                         $("#pi5").addClass("sp5");
                         setTimeout("$('.slide2 .ins').show();", 1000);
-                        $("#chart3").show();
-                        $("#chart3 .rightCon ul li div").addClass("lani");
-                        $("#chart4").show();
-                        $("#chart4 ul li .Triangle").addClass("scaleYani");
+                        setTimeout("$('#chart3').show();$('#chart3 .rightCon ul li div').addClass('lani');", 600);
+                        setTimeout("$('#chart4').show();$('#chart4 ul li .Triangle').addClass('scaleYani');", 1200);
+                        setTimeout("$('#chart7_1').show();$('#chart7_1').addClass('scaleP');", 1800);
                         break;
                     case 3:
                         $("#slide4con ul .outer").show();
@@ -425,7 +434,14 @@
                             setTimeout("$('.slide5 p').hide();$('.slide5 h3').show();$('.slide5 h3').animo({animation: 'lightSpeedIn',duration: 0.5});", 1000);
                         });
                         break;
-
+                    case 5:
+                        $('.zwp').show();
+                        $('.zwp').addClass('cani');
+                        break;
+                    case 7:
+                        $('.slide8li').show();
+                        $('.slide8li').addClass('hani');
+                        break;
                     case 8:
 
                         setTimeout("$('.slide9 .abns img:nth-child(1)').show();", 500);
@@ -442,16 +458,16 @@
                         setTimeout("$('.slide10 .pts img:nth-child(4)').show();", 2000);
                         setTimeout("$('.slide10 .pts img:nth-child(5)').show();", 2500);
                         break;
-                            case 10:
-                            $(".slide11 .button").click(function(){
-                                $(".slide11 .qrcode").show();
-                                $(".slide11 .mask").show();
-                            });
-                            $(".slide11 .mask").click(function(){
-                                $(".slide11 .qrcode").hide();
-                                $(".slide11 .mask").hide();
-                            });
-                            break;
+                    case 10:
+                        $(".slide11 .button").click(function () {
+                            $(".slide11 .qrcode").show();
+                            $(".slide11 .mask").show();
+                        });
+                        $(".slide11 .mask").click(function () {
+                            $(".slide11 .qrcode").hide();
+                            $(".slide11 .mask").hide();
+                        });
+                        break;
                     }
                 }
             });
