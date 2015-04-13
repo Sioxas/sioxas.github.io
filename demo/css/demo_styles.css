@@ -23,7 +23,7 @@ body {
 }
 
 .t {
-    width: 150px
+    width: 180px
 }
 
 .slide1 {
@@ -38,11 +38,11 @@ body {
     margin-left: -175px;
     top: 50%;
     text-align: center;
-    margin-top: -70px;
+    margin-top: -110px;
     display: none;
 }
 
-.slide1 .title h1 {}
+.slide1 .title h1 {margin:20px 0px;}
 
 .slide1 .title p {
     position: relative;
@@ -158,7 +158,6 @@ body {
     list-style: none;
     width: 80%;
     margin: 0 auto;
-    margin-top: 20px;
     transform: scaleY(0.8);
     transform-origin: 0% 0%;
 }
