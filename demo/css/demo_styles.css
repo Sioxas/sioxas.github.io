@@ -38,11 +38,11 @@ body {
     margin-left: -175px;
     top: 50%;
     text-align: center;
-    margin-top: -110px;
+    margin-top: -130px;
     display: none;
 }
 
-.slide1 .title h1 {margin:20px 0px;}
+.slide1 .title h1 {}
 
 .slide1 .title p {
     position: relative;
@@ -54,11 +54,12 @@ body {
     font-family: Source-Han-Light248231, sans-serif;
     font-size: 14px;
     text-indent: 5px;
+    margin-top:10px;
 }
 
 .slide1 #b {
     position: absolute;
-    bottom: 0px;
+    bottom: 20px;
     left: 50%;
     margin-left: -113px;
     font-family: Source-Han-Light248231, sans-serif;
@@ -71,7 +72,7 @@ body {
     position: absolute;
     right: 5px;
     list-style: none;
-    bottom: 10px;
+    bottom: 50px;
     color: #fff;
 }
 
@@ -207,16 +208,22 @@ body {
     color: #fff;
     text-align: left;
 }
-
+.slide3 .slide3ThreeTitle{margin-top:50px;color:#fff;}
 .slide3 .bigcon {
+    width:200px;
     height: 200px;
     list-style: none;
     margin-top:20px;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-100px;
 }
 
 .slide3 .bigcon .bigconli {
-    width: 50%;
-    height: 100%;
+    width: 150px;
+    height: 200px;
     float: left;
     position: relative;
 }
@@ -1310,18 +1317,16 @@ body {
 }
 
 .slide9 .abns {
-    width: 300px;
-    height: 300px;
+    width: 320px;
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -150px;
+    margin-left: -160px;
     margin-top: -150px;
 }
 
 .slide9 .abns img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
     position: absolute;
     display: none;
 }

@@ -69,18 +69,23 @@
                         <img class="t ani3" style="margin-top:-10px;" src="images/t2.png" />
                         <ul>
                             <li><img align="middle" src="images/dongli.png" />带来社会发展新动力</li>
-                            <li><img align="middle" src="images/daxueshengpng.png" />开辟大学生成长新基地</li>
+                            <li><img align="middle" src="images/daxueshengpng.png" />开辟青年成长新基地</li>
                             <li><img align="middle" src="images/xinhuoli.png" />注入农村发展新活力</li>
                             <li><img align="middle" src="images/zhengfu.png" />提供政府决策新思路</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
-            
+
+
             <div class="swiper-slide slide3">
                 <img class="title" src="images/title2.png" />
                 <img class="t" style="position:absolute;left:10px;" src="images/t3.png" />
+                <div class="slide3ThreeTitle">
+                    <h1>认识与意愿现状</h1>
+                    <h1>经营与开展现状</h1>
+                    <h1>基础与条件现状</h1>
+                </div>
                 <ul class="bigcon">
                     <li class="bigconli">
                         <div id="chart2">
@@ -338,7 +343,7 @@
 
             <div class="swiper-slide slide7">
                 <img class="title" src="images/title4.png" />
-                <img class="fi" src="images/fouriteam.png" />
+                <img class="fi" src="images/fouriteams1.png" />
             </div>
 
 
@@ -409,10 +414,10 @@
                     case 0:
                         break;
                     case 1:
-                        setTimeout("$('.ani1').show();$('.ani1').addClass('lani');",0);
-                            setTimeout("$('.ani2').show();$('.ani2').addClass('lani');",600);
-                            setTimeout("$('.ani3').show();$('.ani3').addClass('lani');",1200);
-                        setTimeout("$('.conright ul li').show();$('.conright ul li').addClass('lani');",1800);
+                        setTimeout("$('.ani1').show();$('.ani1').addClass('lani');", 0);
+                        setTimeout("$('.ani2').show();$('.ani2').addClass('lani');", 600);
+                        setTimeout("$('.ani3').show();$('.ani3').addClass('lani');", 1200);
+                        setTimeout("$('.conright ul li').show();$('.conright ul li').addClass('lani');", 1800);
                         break;
                     case 2:
                         $("#pi1").addClass("sp1");
@@ -420,15 +425,24 @@
                         $("#pi3").addClass("sp3");
                         $("#pi4").addClass("sp4");
                         $("#pi5").addClass("sp5");
-                        setTimeout("$('.slide2 .ins').show();", 1000);
-                        setTimeout("$('#chart3').show();$('#chart3 .rightCon ul li div').addClass('lani');", 600);
-                        setTimeout("$('#chart4').show();$('#chart4 ul li .Triangle').addClass('scaleYani');", 1200);
-                        setTimeout("$('#chart7_1').show();$('#chart7_1').addClass('scaleP');", 1800);
+                        $('.slide2 .ins').show();
+                        $('#chart3').show();$('#chart3 .rightCon ul li div').addClass('lani');
+                        $('#chart4').show();$('#chart4 ul li .Triangle').addClass('scaleYani');
+                        $('#chart7_1').show();$('#chart7_1').addClass('scaleP');
+                        var chartindex = 0;
+                        //3秒轮播一次
+                            $(".slide3 .bigcon .bigconli").hide().eq(chartindex).show();
+                        var timer = setInterval(function () {
+                            chartindex = (chartindex == 3) ? 0 : chartindex + 1;
+                            //某个div显示，其他的隐藏
+                            $(".slide3 .bigcon .bigconli").hide().eq(chartindex).show();
+//                            $(".slide3 .bigcon .bigconli").index((chartindex+1) mod 4).show();
+                        }, 3000);
                         break;
                     case 3:
-                        setTimeout("$('#slide4con ul .outer:nth-child(1)').show();$('#slide4con ul .outer:nth-child(1)').addClass('lani');",0);
-                            setTimeout("$('#slide4con ul .outer:nth-child(2)').show();$('#slide4con ul .outer:nth-child(2)').addClass('lani');",600);
-                            setTimeout("$('#slide4con ul .outer:nth-child(3)').show();$('#slide4con ul .outer:nth-child(3)').addClass('lani');",1200);
+                        setTimeout("$('#slide4con ul .outer:nth-child(1)').show();$('#slide4con ul .outer:nth-child(1)').addClass('lani');", 0);
+                        setTimeout("$('#slide4con ul .outer:nth-child(2)').show();$('#slide4con ul .outer:nth-child(2)').addClass('lani');", 600);
+                        setTimeout("$('#slide4con ul .outer:nth-child(3)').show();$('#slide4con ul .outer:nth-child(3)').addClass('lani');", 1200);
                         break;
                     case 4:
                         $(".slide5 p").show();
@@ -444,8 +458,8 @@
                         $('.zwp').addClass('cani');
                         break;
                     case 7:
-                        setTimeout("$('.ani4').show();$('.ani4').addClass('hani');",0);
-                            setTimeout("$('.ani5').show();$('.ani5').addClass('hani');",600);
+                        setTimeout("$('.ani4').show();$('.ani4').addClass('hani');", 0);
+                        setTimeout("$('.ani5').show();$('.ani5').addClass('hani');", 600);
                         break;
                     case 8:
 
@@ -464,20 +478,28 @@
                         setTimeout("$('.slide10 .pts img:nth-child(5)').show();", 2500);
                         break;
                     case 10:
-                            setTimeout("$('.ani6').show();$('.ani6').addClass('cani');",0);
-                            setTimeout("$('.ani7').show();$('.ani7').addClass('cani');",600);
+                        setTimeout("$('.ani6').show();$('.ani6').addClass('cani');", 0);
+                        setTimeout("$('.ani7').show();$('.ani7').addClass('cani');", 600);
                         $(".slide11 .button").click(function () {
                             $(".slide11 .qrcode").show();
                             $(".slide11 .mask").show();
-                            $(".slide11 .qrcode").animate({opacity:'1.0'},500);
-                            
-                            $(".slide11 .mask").animate({opacity:'0.8'},200);
-                            
+                            $(".slide11 .qrcode").animate({
+                                opacity: '1.0'
+                            }, 500);
+
+                            $(".slide11 .mask").animate({
+                                opacity: '0.8'
+                            }, 200);
+
                         });
                         $(".slide11 .mask").click(function () {
-                            $(".slide11 .qrcode").animate({opacity:'0'},200);
-                            $(".slide11 .mask").animate({opacity:'0'},200);
-                            setTimeout("$('.slide11 .qrcode').hide();$('.slide11 .mask').hide();",200);
+                            $(".slide11 .qrcode").animate({
+                                opacity: '0'
+                            }, 200);
+                            $(".slide11 .mask").animate({
+                                opacity: '0'
+                            }, 200);
+                            setTimeout("$('.slide11 .qrcode').hide();$('.slide11 .mask').hide();", 200);
                         });
                         break;
                     }
