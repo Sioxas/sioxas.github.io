@@ -96,6 +96,7 @@ THE SOFTWARE.
 
 
 edit-on-click
+MIT
 
 ng-zorro-antd
 MIT
